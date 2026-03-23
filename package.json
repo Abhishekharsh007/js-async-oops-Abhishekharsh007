@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll",
-    "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest",
-    "test:win:watch": "set NODE_OPTIONS=--experimental-vm-modules&& jest --watchAll"
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watchAll",
+    "test:win": "cross-env set NODE_OPTIONS=--experimental-vm-modules&& jest",
+    "test:win:watch": "cross-env set NODE_OPTIONS=--experimental-vm-modules&& jest --watchAll"
   },
   "keywords": [
     "javascript",
